@@ -1,0 +1,128 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: paragraph;
+    src: url(/assets/fonts/TheMix-6-SemiBoldCaps.otf);
+}
+@font-face {
+    font-family: title;
+    src: url(/assets/fonts/TheMix-9-BlackCaps.otf);
+}
+
+
+.page{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/assets/images/background.jpg");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-color: rgb(28, 28, 28);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Start - Title Design */
+.titleBox{
+    width: 80%;
+    margin: 20px;
+
+}
+.title{
+    font-family: title;
+    text-align: center;
+    font-size: 70px;
+    background: -webkit-linear-gradient(#FBCE57, #E87B42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* End - Title Design */
+
+
+.content{
+    height: 70%;
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.content::-webkit-scrollbar{
+    outline: none;
+}
+
+.point{
+    font-family: paragraph;
+    margin-bottom: 40px;
+}
+
+.contentTitle{
+    font-family: title;
+    font-size: 20px;
+    color: #61EBFE;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.contentInfo{
+    color: white;
+}
+
+.text{
+    margin-bottom: 10px;
+}
+
+.image{
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 40px;
+    align-self: center;
+}
+
+.video{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videoTitle{
+    font-family: title;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 50px;
+    background: -webkit-linear-gradient(#61EBFE, #FBCE57);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.detailedText{
+    color: #E87B42;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+
+.link{
+    margin-top: 50px;
+
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
